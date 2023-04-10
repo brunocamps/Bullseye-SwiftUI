@@ -24,7 +24,7 @@ struct ContentView: View {
       HStack {
         Text("1").bold()
         Slider(value: $sliderValue, in: 1.0...100.0)
-        Text("100").bold()
+          Text("100").bold()
       }
       Button("Hit Me") {
         alertIsVisible = true
@@ -34,7 +34,7 @@ struct ContentView: View {
           print("Alert closed")
         }
       }, message: {
-        var roundedValue: Int = Int(sliderValue.rounded())
+        let roundedValue: Int = Int(sliderValue.rounded())
 
         Text("""
           The slider's value is \(sliderValue), and rounded value is \(roundedValue).

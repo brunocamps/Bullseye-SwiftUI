@@ -13,17 +13,13 @@ struct Game {
   var round = 1.0
 
   func points(sliderValue: Int) -> Int {
-    var difference: Int
-    if sliderValue > target {
-      difference = sliderValue - target
-    } else if target > sliderValue {
-      difference = target - sliderValue
-    } else {
-      // now the values must be equal, therefore the difference is zero
-      difference = 0
-
-    }
-
+    let difference: Int = abs(target - sliderValue)
+//      if difference < 0 {
+//          difference = difference * -1
+//      }
+      
+      // Check the Swift Standard Library to see if there's a function there to help you do this with less amount of code
+    
     let awardedPoints: Int = 100 - difference
     return awardedPoints
 
