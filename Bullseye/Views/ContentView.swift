@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State private var alertIsVisible: Bool = false
-  @State private var sliderValue: Double = 50.0
-  @State private var game: Game = Game(target: 43)
+  @State private var alertIsVisible = false
+  @State private var sliderValue = 50.0
+  @State private var game = Game(target: 43)
 
   
 
@@ -34,7 +34,7 @@ struct ContentView: View {
           print("Alert closed")
         }
       }, message: {
-        let roundedValue: Int = Int(sliderValue.rounded())
+        let roundedValue = Int(sliderValue.rounded())
 
         Text("""
           The slider's value is \(sliderValue), and rounded value is \(roundedValue).
