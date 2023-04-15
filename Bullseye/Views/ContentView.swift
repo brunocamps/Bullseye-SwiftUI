@@ -20,27 +20,19 @@ struct ContentView: View {
           Color("BackgroundColor")
               .ignoresSafeArea()
           VStack {
-            Text("🎯🎯🎯\nPut the Bullseye as close as you can to.".uppercased())
-            .bold()
-            .multilineTextAlignment(.center)
-            .lineSpacing(4.0)
-            .font(.footnote)
-            .kerning(2.0)
-            .padding(.horizontal, 30)
-          Text(String(game.target))
-                .kerning(-1)
-                .font(.largeTitle)
-                .fontWeight(.black)
+              // Instance of InstructionsView
+              InstructionsView(game: $game)
           HStack {
             Text("1")
                 .bold()
+                .foregroundColor(Color("TextColor"))
             Slider(value: $sliderValue, in: 1.0...100.0)
               Text("100")
                 .bold()
           }
           .padding()
             Button("Hit Me".uppercased()) {
-            alertIsVisible = true
+            alertIsVisible = true		
           }
           .padding(20.0)
           .background(
@@ -73,8 +65,23 @@ struct ContentView: View {
   }
 }
 
+struct InstructionsView: View {
+    @Binding var game: Game
+    
+    var body: some View {
+        VStack {
+            InstructionText(text: "🎯🎯🎯\nPut the Bullseye as close as you can to").padding(.horizontal, 30)
+            BigNumberText(text: String(game.target))
+        }
+        
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
+      ContentView()
+          .preferredColorScheme(.dark)
+          .previewDevice("iPhone 14 Pro Max")
   }
 }

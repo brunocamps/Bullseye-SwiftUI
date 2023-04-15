@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FCEF8B629EADD2800D3D7AA /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCEF8B529EADD2800D3D7AA /* TextViews.swift */; };
 		F73C332429DEEED700FCAB71 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C332329DEEED700FCAB71 /* Game.swift */; };
 		F75B760429DD8DAD00CEFE09 /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B760329DD8DAD00CEFE09 /* BullseyeApp.swift */; };
 		F75B760629DD8DAD00CEFE09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B760529DD8DAD00CEFE09 /* ContentView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FCEF8B529EADD2800D3D7AA /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		F73C332329DEEED700FCAB71 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F75B760029DD8DAD00CEFE09 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75B760329DD8DAD00CEFE09 /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				F75B760529DD8DAD00CEFE09 /* ContentView.swift */,
+				6FCEF8B529EADD2800D3D7AA /* TextViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,9 +103,9 @@
 		F75B760229DD8DAD00CEFE09 /* Bullseye */ = {
 			isa = PBXGroup;
 			children = (
+				F73C332029DEDD4900FCAB71 /* Models */,
 				F73C332229DEDD6B00FCAB71 /* App */,
 				F73C332129DEDD5C00FCAB71 /* Views */,
-				F73C332029DEDD4900FCAB71 /* Models */,
 				F75B760929DD8DB000CEFE09 /* Preview Content */,
 			);
 			path = Bullseye;
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F75B760629DD8DAD00CEFE09 /* ContentView.swift in Sources */,
+				6FCEF8B629EADD2800D3D7AA /* TextViews.swift in Sources */,
 				F73C332429DEEED700FCAB71 /* Game.swift in Sources */,
 				F75B760429DD8DAD00CEFE09 /* BullseyeApp.swift in Sources */,
 			);
